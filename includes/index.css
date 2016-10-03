@@ -6,10 +6,7 @@ body {
   text-align: center;
 }
 
-/* CUSTOMIZE THE NAVBAR
--------------------------------------------------- */
-
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
+/*Navbar*/
 .navbar-wrapper {
   position: absolute;
   top: 0;
@@ -18,7 +15,6 @@ body {
   z-index: 20;
 }
 
-/* Flip around the padding for proper display in narrow viewports */
 .navbar-wrapper > .container {
   padding-right: 0;
   padding-left: 0;
@@ -52,7 +48,7 @@ body {
   .navbar-wrapper .navbar {
     border-radius: 4px;
   }
-  
+
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
   margin-bottom: 20px;
@@ -80,3 +76,12 @@ body {
   letter-spacing: -1px;
 }
 
+.project {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.contact {
+  padding: 40px 15px;
+  text-align: center;
+}
