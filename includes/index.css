@@ -20,8 +20,24 @@ img.displayed {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 40px;
   height: 300px;
   width: auto;
+  border: 3px solid #337ab7;
+}
+
+.imagebanner {
+  display: block;
+  width: 91%;
+  height: 350px;
+  position: center;
+  margin-left: 85px;
+  margin-top: 50px;
+  margin-right: 80px;
+  margin-bottom: 0px;
+  padding: 0;
+  overflow: hidden;
+  border: 3px solid #337ab7;
 }
 
 .text-muted {
@@ -118,6 +134,7 @@ img.displayed {
   margin: 80px;
   margin-right: 80px;
   margin-left: 80px;
+  border: 1px solid white;
 }
 
 /* Thin out the marketing headings */
@@ -128,8 +145,8 @@ img.displayed {
 }
 
 .featurette-image {
-  width: 600px;
-  height: auto;
+  width: auto;
+  height: 400px;
 }
 
 .project {
