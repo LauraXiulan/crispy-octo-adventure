@@ -1,6 +1,14 @@
 body {
   padding-top: 50px;
   background-color: #CAE1FF;
+  width: 100%;
+  height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -12,8 +20,13 @@ h2 {
   color: darkslategrey;
 }
 
+h3 {
+  font-size: 28px;
+}
+
 p {
   color: darkslategrey;
+  font-size: 18px;
 }
 
 img.displayed {
@@ -28,21 +41,14 @@ img.displayed {
 
 .imagebanner {
   display: block;
-  width: 91%;
-  height: 350px;
+  width: 100%;
+  height: 400px;
   position: center;
-  margin-left: 85px;
   margin-top: 50px;
-  margin-right: 80px;
   margin-bottom: 0px;
   padding: 0;
   overflow: hidden;
   border: 3px solid #337ab7;
-}
-
-.text-muted {
-  color: slategrey;
-  font-style: italic;
 }
 
 .content {
@@ -57,8 +63,6 @@ img.displayed {
   right: 0;
   left: 0;
   z-index: 20;
-  margin-right: 80px;
-  margin-left: 80px;
 }
 
 .navbar {
@@ -81,63 +85,81 @@ img.displayed {
   padding-right: 0;
   padding-left: 0;
 }
+
 .navbar-wrapper .navbar {
   padding-right: 15px;
   padding-left: 15px;
 }
+
 .navbar-wrapper .navbar .container {
   width: auto;
 }
 
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
 @media (min-width: 768px) {
-  /* Navbar positioning foo */
-  .navbar-wrapper {
-    margin-top: 20px;
-    align-content: center;
-  }
 
-  .navbar-wrapper .container {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-  .navbar-wrapper .navbar {
-    padding-right: 30px;
-    padding-left: 0px;
-  }
+.navbar-wrapper {
+  margin-top: 20px;
+  align-content: center;
+}
 
-/* The navbar becomes detached from the top, so we round the corners */
+.navbar-wrapper .container {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.navbar-wrapper .navbar {
+  padding-right: 30px;
+  padding-left: 0px;
+}
+
 .navbar-wrapper .navbar {
   border-radius: 4px;
-  }
+}
 
-/* Center align the text within the three columns below the carousel */
+/*About me section*/
 .marketing .col-lg-4 {
   margin-bottom: 20px;
   text-align: center;
 }
+/*End Navbar*/
+
 .marketing h2 {
   font-weight: normal;
 }
+
 .marketing .col-lg-4 p {
   margin-right: 10px;
   margin-left: 10px;
   color: black;
 }
+
 .marketing h1 {
   text-align: center;
 }
 
+/*Featurette*/
 .featurette-divider {
-  margin: 80px;
-  margin-right: 80px;
-  margin-left: 80px;
   border: 1px solid white;
+  margin-top: 45px;
+  margin-bottom: 45px;
 }
 
-/* Thin out the marketing headings */
+.featurette-divider1 {
+  border: 1px solid #337ab7;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.featurette-divider2 {
+  border: 1px solid #337ab7;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .featurette-heading {
   font-weight: 300;
   line-height: 1;
@@ -149,17 +171,125 @@ img.displayed {
   height: 350px;
 }
 
-.project {
-  padding: 40px 15px;
-  text-align: center;
+.text-muted {
+  color: slategrey;
+  font-style: italic;
 }
 
 .row p {
   padding: 40px 15px;
   text-align: center;
 }
+/*End Featurette*/
 
-/* Style the Image Used to Trigger the Modal */
+/*Footer*/
+.footer-wrap {
+    color: darkslategrey;
+    text-align: center; 
+  }
+
+.col-2 {
+  width: 50%;
+  float: left;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-right: 200px;
+  font-size: 20px;
+}
+
+.col-1 {
+  width: 50%;
+  float: left;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-left: 200px;
+  font-size: 20px;
+}
+
+footer {
+    text-align: center;
+}
+
+/*Skillbar*/
+.skillbar {
+  position:relative;
+  display:block;
+  margin-bottom:15px;
+  width:100%;
+  background: #f0f8ff;
+  height:35px;
+  border-radius:3px;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  -webkit-transition:0.4s linear;
+  -moz-transition:0.4s linear;
+  -ms-transition:0.4s linear;
+  -o-transition:0.4s linear;
+  transition:0.4s linear;
+  -webkit-transition-property:width, background-color;
+  -moz-transition-property:width, background-color;
+  -ms-transition-property:width, background-color;
+  -o-transition-property:width, background-color;
+  transition-property:width, background-color;
+}
+
+.skillbar-title {
+  position:absolute;
+  top:0;
+  left:0;
+  width:110px;
+  font-weight:bold;
+  font-size:13px;
+  color:#ffffff;
+  background:#6adcfa;
+  -webkit-border-top-left-radius:3px;
+  -webkit-border-bottom-left-radius:4px;
+  -moz-border-radius-topleft:3px;
+  -moz-border-radius-bottomleft:3px;
+  border-top-left-radius:3px;
+  border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+  display:block;
+  background:rgba(0, 0, 0, 0.1);
+  padding:0 20px;
+  height:35px;
+  line-height:35px;
+  -webkit-border-top-left-radius:3px;
+  -webkit-border-bottom-left-radius:3px;
+  -moz-border-radius-topleft:3px;
+  -moz-border-radius-bottomleft:3px;
+  border-top-left-radius:3px;
+  border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+  height:35px;
+  width:0px;
+  background:#6adcfa;
+  border-radius:3px;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+  position:absolute;
+  right:10px;
+  top:0;
+  font-size:11px;
+  height:35px;
+  line-height:35px;
+  color:#ffffff;
+  color:rgba(0, 0, 0, 0.4);
+}
+
+#source {
+  font-size: 12px;
+}
+
+
+/*Modal */
 #myImg {
     border-radius: 5px;
     cursor: pointer;
@@ -296,25 +426,4 @@ img.displayed {
     .modal-content {
         width: 100%;
     }
-}
-
-.footer-wrap {
-    color: darkslategrey;
-    text-align: center; 
-  }
-
-.col-2 {
-  width: 50%;
-  float: left;
-  text-align: center;
-  padding-bottom: 20px;
-  padding-right: 200px;
-}
-
-.col-1 {
-  width: 50%;
-  float: left;
-  text-align: center;
-  padding-bottom: 20px;
-  padding-left: 200px;
 }
