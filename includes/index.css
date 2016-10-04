@@ -297,3 +297,24 @@ img.displayed {
         width: 100%;
     }
 }
+
+.footer-wrap {
+    color: darkslategrey;
+    text-align: center; 
+  }
+
+.col-2 {
+  width: 50%;
+  float: left;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-right: 200px;
+}
+
+.col-1 {
+  width: 50%;
+  float: left;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-left: 200px;
+}
