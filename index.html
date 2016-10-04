@@ -73,7 +73,7 @@
           <p><a class="btn btn-primary page-scroll" href="#teacher" role="button">Read more &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="./includes/mockfoto.jpg" alt="Generic placeholder image" width="200" height="200">
+          <img class="img-circle" src="./includes/programmer.jpg" alt="Generic placeholder image" width="200" height="200">
           <h2>Programmer</h2>
           <p>At the moment I am following an intensive course in front-end and back-end development. Learning how to program and code has always been on my to-do-list and with this course I learn a lot in a short period of time.</p>
           <p><a class="btn btn-primary page-scroll" href="#programmer" role="button">Read more &raquo;</a></p>
@@ -84,7 +84,7 @@
   <section id="student" class="student-section">
     <hr class="featurette-divider">
       <div class="row featurette">
-        <div class="col-md-7">
+        <div class="col-md-7 col-md-push-1">
           <h2 class="featurette-heading">Sinologist: <span class="text-muted">Knowing all about Chinese Language and Culture. </span></h2>
           <p class="lead">In 2010 I started the Sinology bachelor at the Leiden University. Here I learned all about writing, speaking, understanding and reading the Chinese language. I also learned much about the immensive Chinese culture. During my bachelor I spent one year abroad, in Taiwan, on a scholarship. Here I really experienced what the Chinese culture entailed. After my bachelors I continued with a master East-Asian studies, where I learned somewhat broader about other countries in East and SouthEast Asia.</p>
           <p><a class="btn btn-primary page-scroll" href="#about" role="button">Go back &raquo;</a>
@@ -99,7 +99,7 @@
    <section id="teacher" class="teacher-section">
     <hr class="featurette-divider">
       <div class="row featurette">
-        <div class="col-md-7 col-md-push-5">
+        <div class="col-md-7 col-md-push-4">
           <h2 class="featurette-heading">Teacher: <span class="text-muted">Teaching Chinese Language and Culture.</span></h2>
           <p class="lead">After studying Chinese I decided that I would want to be a teacher. So I enrolled for the Educational Master, again at Leiden University. Here I not only learned how to be a great teacher, but also learned more about adolescent identity and pedagogy, as well as about course didactics. As part of my studies I did an internship at the Rijnlands Lyceum Wassenaar, a secondary school, where I taught Chinese to both junior and senior classes with great enjoyment.</p>
           <p><a class="btn btn-primary page-scroll" href="#about" role="button">Go back &raquo;</a>
@@ -114,14 +114,14 @@
   <section id="programmer" class="programmer-section">
     <hr class="featurette-divider">
       <div class="row featurette">
-        <div class="col-md-7">
+        <div class="col-md-7 col-md-push-1">
           <h2 class="featurette-heading">Programmer: <span class="text-muted">Learning how to program and code.</span></h2>
           <p class="lead">I recently started the intensive course "full-stack development with javascript" with the B. Startup School Amsterdam (BSSA) and the New York Code + Design Academy (NYCDA). Here I learn in a short three months how to program and code. Only doing this for about a week now, I feel like I have been doing it for months and I very much enjoy the course.</p>
           <p><a class="btn btn-primary page-scroll" href="#about" role="button">Go back &raquo;</a>
           <a class="btn btn-primary page-scroll" href="#projects" role="button">Continue to Projects &raquo;</a></p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="./includes/mockfoto.jpg" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive center-block" src="./includes/programmer.jpg" alt="Generic placeholder image">
         </div>
       </div>
     </section>
@@ -132,13 +132,8 @@
   <div class="container">
   <div class="projects">
     <h1>Projects</h1>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br></br>
-      <p><a class="btn btn-primary page-scroll" href="#contact" role="button">Continue to contact form &raquo;</a></p>
+      <p class="lead">Here I will give a preview of a few of the projects I did. You can click on the images to enlarge them. If you want to see the code separately, click on the link.</p><br></br>
+      <p><a class="btn btn-primary page-scroll" href="#contact" role="button">Continue to contact information &raquo;</a></p>
       <p><a class="btn btn-primary page-scroll" href="#page-top" role="button">Go back to top &raquo;</a></p><br></br><br></br><br></br>
     </div>
   </div>
@@ -146,21 +141,36 @@
 <div class="row">
         <div class="col-lg-4">
           <h2>Project 1: FizzBuzz</h2>
-          <img class="#" scr="#">
+            <img id="myImg" src="./includes/Fizzbuzz.png" alt="Fizzbuzz" width="400" height="auto">
+              <div id="myModal" class="modal">
+                <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+                  <img class="modal-content" id="img01">
+                   <div id="caption"></div>
+              </div>
           <p> In this project I made a function that printed the numbers from 1 to 100, replacing multiples of 3 with the word "Fizz", multiples of 5 with the word "Buzz" and multiples of both 3 and 5 with the word "FizzBuzz".</p>
-          <p><a class="btn btn-primary" href="#" role="button">View code &raquo;</a></p>
+          <p><a class="btn btn-primary" href="https://github.com/LauraXiulan/studious-octo-system/blob/master/FizzBuzz.js" role="button">View code &raquo;</a></p>
         </div>
         <div class="col-lg-4">
           <h2>Project 2: Book Library</h2>
-          <img class="#" scr="#">
+            <img id="myImg1" src="./includes/Booklibrary.png" alt="Book Library" width="400" height="auto">
+              <div id="myModal1" class="modal">
+                <span class="close" onclick="document.getElementById('myModal1').style.display='none'">&times;</span>
+                  <img class="modal-content" id="img02">
+                   <div id="caption1"></div>
+              </div>
           <p>In this project I made a sample book object and created a function to read the title and body of that book.</p>
-          <p><a class="btn btn-primary" href="#" role="button">View code &raquo;</a></p>
+          <p><a class="btn btn-primary" href="https://github.com/LauraXiulan/studious-octo-system/blob/master/Book%20Library.js" role="button">View code &raquo;</a></p>
        </div>
         <div class="col-lg-4">
           <h2>Project 3: Prototype </h2>
-          <img class="#" scr="#">
+            <img id="myImg2" src="./includes/Prototype.png" alt="Prototype" width="400" height="auto">
+              <div id="myModal2" class="modal">
+                <span class="close" onclick="document.getElementById('myModal2').style.display='none'">&times;</span>
+                  <img class="modal-content" id="img03">
+                   <div id="caption2"></div>
+              </div>
           <p>In this project I created a new prototype "Emaillist". In this prototype you can add Emailadresses to a list as well as send emails to all these adresses in one go.</p>
-          <p><a class="btn btn-primary" href="#" role="button">View code &raquo;</a></p>
+          <p><a class="btn btn-primary" href="https://github.com/LauraXiulan/studious-octo-system/blob/master/Prototype.js" role="button">View code &raquo;</a></p>
         </div>
       </div>
     </section>
@@ -174,39 +184,13 @@
   <div class="row">
   <h1>Contact</h1>
   <p>If you want to know more, or have other questions, please don't hesitate to contact me.</p>
-    <form role="form" id="contact-form" class="contact-form">
-                    <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group">
-                            <input type="text" class="form-control" name="Name" autocomplete="off" id="Name" placeholder="Name">
-                      </div>
-                    </div>
-                      <div class="col-md-6">
-                      <div class="form-group">
-                            <input type="email" class="form-control" name="email" autocomplete="off" id="email" placeholder="E-mail">
-                      </div>
-                    </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12">
-                      <div class="form-group">
-                            <textarea class="form-control textarea" rows="3" name="Message" id="Message" placeholder="Message"></textarea>
-                      </div>
-                    </div>
-                    </div>
-                    <div class="row">
-                    <div class="col-md-12">
-                  <button type="submit" class="btn btn-primary pull-right">Send a message</button>
-                  </div>
-                  </div>
-                </form> <br></br><br></br>
-                <p><a class="btn btn-primary page-scroll" href="#page-top" role="button">Go back to top &raquo;</a></p>
+   <p><a class="btn btn-primary page-scroll" href="#page-top" role="button">Go back to top &raquo;</a></p>
   </div>
 </div>
 </section>
 
     <footer>
-        <p>&copy; 2016 Laura Kramer. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p>&copy; 2016 Laura Kramer. &middot;</p>
       </footer>
 
     </div>
