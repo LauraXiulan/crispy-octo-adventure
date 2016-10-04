@@ -69,6 +69,11 @@ img.displayed {
   text-align: center;
 }
 
+#academia {
+  font-size: 20px;
+  text-align: center;
+}
+
 /*Navbar*/
 .navbar-wrapper {
   position: absolute;
