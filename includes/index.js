@@ -7,9 +7,11 @@ var modal2 = document.getElementById('myModal2');
 var img = document.getElementById('myImg');
 var img1 = document.getElementById('myImg1');
 var img2 = document.getElementById('myImg2');
+
 var modalImg = document.getElementById("img01");
 var modalImg1 = document.getElementById("img02");
 var modalImg2 = document.getElementById("img03");
+
 var captionText = document.getElementById("caption");
 var captionText1 = document.getElementById("caption1");
 var captionText2 = document.getElementById("caption2");

@@ -30,7 +30,7 @@ p {
 }
 
 .p1 {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 img.displayed {
@@ -64,7 +64,7 @@ img.displayed {
 #bannerh2 {
   position: absolute;
   top: 130px;
-  left: 70px;
+  left: 30px;
   width: 100%;
   color: darkslategrey;
   font: bold 38px Helvetica, sans-serif;
@@ -72,8 +72,7 @@ img.displayed {
 
 @media screen and (max-width: 572px) {
   #bannerh2 {
-    top: 70px;
-    left: 10px;
+    top: 80px;
     font-size: 24px;
   }
 }
@@ -95,6 +94,7 @@ img.displayed {
   right: 0;
   left: 0;
   z-index: 20;
+  width: 100%;
 }
 
 .navbar {
@@ -104,8 +104,59 @@ img.displayed {
 .navbar-brand.page-scroll {
   color: white;
   display: inline-block;
-  margin-right: 80px;
   padding-right: 80px;
+}
+
+/*@media (min-width: 768px) and (max-width: 1038px) {
+  .collapse {
+    display: none !important;
+  }
+}*/
+
+@media (max-width: 1038px) {
+  .navbar-header {
+    float: none;
+  }
+
+  .navbar-left,.navbar-right {
+    float: none !important;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
+
+  .navbar-nav {
+    float: none!important;
+    margin-top: 7.5px;
+  }
+
+  .navbar-nav>li {
+    float: none;
+  }
+
+  .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .collapse.in{
+    display:block !important;
+  }
 }
 
 @media screen and (max-width: 572px) {
@@ -199,13 +250,19 @@ img.displayed {
   height: 350px;
 }
 
+@media screen and (max-width: 572px) {
+  .featurette-image {
+    max-height: 200px;
+  }
+}
+
 .text-muted {
   color: slategrey;
   font-style: italic;
 }
 
 .row p {
-  padding: 40px 15px;
+  padding: 20px 15px;
   text-align: center;
 }
 /*End Featurette*/
@@ -250,7 +307,7 @@ footer {
   position:relative;
   display:block;
   margin-bottom:15px;
-  width:100%;
+  width: 100%;
   background: #f0f8ff;
   height:35px;
   border-radius:3px;
@@ -301,7 +358,7 @@ footer {
 
 .skillbar-bar {
   height:35px;
-  width:0px;
+  width: 0px;
   background:#6adcfa;
   border-radius:3px;
   -moz-border-radius:3px;
@@ -322,6 +379,11 @@ footer {
 #source {
   font-size: 12px;
 }
+
+@media screen and (max-width: 572px) {
+  #source {
+    font-size: 10px;
+  }
 
 
 /*Modal */
