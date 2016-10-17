@@ -252,7 +252,7 @@ img.displayed {
 
 @media screen and (max-width: 572px) {
   .featurette-image {
-    max-height: 200px;
+    height: auto;
   }
 }
 
