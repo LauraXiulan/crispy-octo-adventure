@@ -29,6 +29,13 @@ p {
   font-size: 18px;
 }
 
+@media screen and (max-width: 768px) {
+  p, h1, h2, h3 {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
 .p1 {
   font-size: 18px;
 }
@@ -57,7 +64,8 @@ img.displayed {
 
 @media screen and (max-width: 572px) {
   .imagebanner {
-   height: auto;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -70,10 +78,11 @@ img.displayed {
   font: bold 38px Helvetica, sans-serif;
 }
 
-@media screen and (max-width: 572px) {
+@media screen and (max-width: 768px) {
   #bannerh2 {
-    top: 80px;
+    top: 70px;
     font-size: 24px;
+    left: 0px;
   }
 }
 
@@ -197,6 +206,18 @@ img.displayed {
   padding-left: 20px;
 }
 
+button.navbar-toggle.collapsed {
+  max-height: 40px;
+  margin: 5px;
+  padding: 5px;
+}
+
+button.navbar-toggle {
+  max-height: 40px;
+  margin: 5px;
+  padding: 5px;
+}
+
 /*About me section*/
 .marketing .col-lg-4 {
   margin-bottom: 20px;
@@ -247,6 +268,8 @@ img.displayed {
 @media screen and (max-width: 572px) {
   .featurette-image {
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -275,8 +298,8 @@ footer {
 }
 
 .glyph {
-  max-width: 35px;
-  max-height: 35px;
+  max-width: 25px;
+  max-height: 25px;
 }
 
 /*Skillbar*/
@@ -490,9 +513,16 @@ footer {
 
 .close:hover,
 .close:focus {
-    color: #bbb;
+    color: red;
     text-decoration: none;
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  span.close {
+    position: relative;
+    margin-top: -50px;
+  }
 }
 
 /* 100% Image Width on Smaller Screens */
