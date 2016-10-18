@@ -42,6 +42,16 @@ span.onclick = function() {
   modal.style.display = "none";
 }
 
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    } if (event.target == modal1) {
+        modal1.style.display = "none";
+    } if (event.target == modal2) {
+        modal2.style.display = "none";
+    }
+}
+
 jQuery(document).ready(function(){
     jQuery('.skillbar').each(function(){
         jQuery(this).find('.skillbar-bar').animate({
