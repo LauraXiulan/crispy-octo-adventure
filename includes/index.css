@@ -265,25 +265,8 @@ img.displayed {
 .footer-wrap {
     color: darkslategrey;
     text-align: center; 
+    width: 100%;
   }
-
-.col-2 {
-  width: 50%;
-  float: left;
-  text-align: center;
-  padding-bottom: 20px;
-  padding-right: 200px;
-  font-size: 20px;
-}
-
-.col-1 {
-  width: 50%;
-  float: left;
-  text-align: center;
-  padding-bottom: 20px;
-  padding-left: 200px;
-  font-size: 20px;
-}
 
 footer {
     text-align: left;
@@ -424,8 +407,8 @@ footer {
 .modal-content {
     margin: auto;
     display: block;
-    width: 100%;
-    max-width: 1280px;
+    width: 80%;
+    max-width: 700px;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
