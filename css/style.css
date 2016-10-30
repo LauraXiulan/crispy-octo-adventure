@@ -4,6 +4,12 @@ p,h1,h2,h3,h4 {
   padding: 5px;
 }
 
+#traineeship {
+  font-size: 24px;
+  color: #fed136;
+  text-transform: uppercase;
+}
+
 /*Header*/
 .featurette-image {
   width: auto;
@@ -150,14 +156,14 @@ p.lead {
 @media (max-width: 425px) {
   .col-sm-4 {
     float: left;
-    width: 30%;
+    width: 33%;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .col-sm-4 {
     float: left;
-    width: 40%;
+    width: 50%;
   }
 }
 
@@ -176,7 +182,7 @@ p.lead {
 }
 
 .student-section {
-    background-color: aliceblue;
+    background-color: ghostwhite;
 }
 
 .teacher-section {
@@ -184,7 +190,7 @@ p.lead {
 }
 
 .programmer-section {
-    background-color: aliceblue;
+    background-color: ghostwhite;
 }
 
 .degree-section {
@@ -195,7 +201,7 @@ p.lead {
     padding-top: 80px;
     text-align: center;
     padding-bottom: 40px;
-    background-color: aliceblue;
+    background-color: ghostwhite;
     padding-bottom: 40px;
 }
 
@@ -204,5 +210,5 @@ p.lead {
 }
 
 #portfolio {
-  background-color: aliceblue;
+  background-color: ghostwhite;
 }

@@ -6,6 +6,7 @@
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+/*  margin-left: 10px;*/
 }
 .text-muted {
   color: #777777;
@@ -237,10 +238,16 @@ header {
   text-align: center;
   color: white;
 }
+
+@media (max-width: 425px) {
+  header {
+    background-image: url('../img/banner1.jpg');
+  }
+}
+
 header .intro-text {
   padding-top: 100px;
   padding-bottom: 50px;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 header .intro-text .intro-lead-in {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -248,14 +255,16 @@ header .intro-text .intro-lead-in {
   font-size: 22px;
   line-height: 22px;
   margin-bottom: 25px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 header .intro-text .intro-heading {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   font-weight: 700;
   font-size: 50px;
   line-height: 50px;
   margin-bottom: 25px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 @media (min-width: 768px) {
   header .intro-text {
@@ -271,7 +280,7 @@ header .intro-text .intro-heading {
   }
   header .intro-text .intro-heading {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
+ /*   text-transform: uppercase;*/
     font-weight: 700;
     font-size: 75px;
     line-height: 75px;
@@ -279,8 +288,9 @@ header .intro-text .intro-heading {
   }
 }
 section {
-  padding: 100px 0;
-}
+  padding: 80px 10px;
+/*  margin-right: -15px;
+*/}
 section h2.section-heading {
   font-size: 40px;
   margin-top: 0;
@@ -294,19 +304,29 @@ section h3.section-subheading {
   font-weight: 400;
   margin-bottom: 75px;
 }
+
 @media (min-width: 768px) {
   section {
-    padding: 150px 0;
+    padding: 80px 10px;
   }
 }
-.service-heading {
+
+/*.service-heading {
   margin: 15px 0;
   text-transform: none;
-}
+}*/
+
 #portfolio .portfolio-item {
   margin: 0 0 15px;
   right: 0;
 }
+
+@media (max-width: 425px) {
+  #portfolio .portfolio-item {
+    margin: 0 0 40px;
+  }
+}
+
 #portfolio .portfolio-item .portfolio-link {
   display: block;
   position: relative;
@@ -368,7 +388,7 @@ section h3.section-subheading {
     margin: 0 0 30px;
   }
 }
-.timeline {
+/*.timeline {
   list-style: none;
   padding: 0;
   position: relative;
@@ -553,7 +573,7 @@ section h3.section-subheading {
 }
 aside.clients img {
   margin: 50px auto;
-}
+}*/
 section#contact {
   background-color: #222222;
   background-image: url('../img/map-image.png');
