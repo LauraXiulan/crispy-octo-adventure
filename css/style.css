@@ -87,6 +87,30 @@ p.lead {
   }
 }
 
+#button1 {
+  margin-top: 78px;
+}
+
+#button2 {
+  margin-top: 54px;
+}
+
+#button3 {
+  margin-top: 30px;
+}
+
+@media(max-width: 768px) {
+  #button1 {
+    margin-top: 54px;
+  }
+}
+
+@media(max-width: 425px) {
+  #button1, #button2 {
+    margin-top: 30px;
+  }
+}
+
 /*Buttons*/
 .btn-read {
 	color: white;
@@ -118,19 +142,19 @@ p.lead {
 }
 
 .devicon-html5-plain-wordmark {
-  color: orange;
+  color: chocolate;
 }
 
 .devicon-css3-plain-wordmark {
-  color: navy;
+  color: royalblue;
 }
 
 .devicon-javascript-plain {
-  color: green;
+  color: seagreen;
 }
 
 .devicon-nodejs-plain-wordmark {
-  color: limegreen;
+  color: forestgreen;
 }
 
 .devicon-bootstrap-plain-wordmark {
@@ -151,6 +175,10 @@ p.lead {
 
 .devicon-react-original-wordmark {
   color: maroon;
+}
+
+.devicon-postgresql-plain-wordmark {
+  color: teal;
 }
 
 @media (max-width: 425px) {
@@ -195,6 +223,15 @@ p.lead {
 
 .degree-section {
     background-color: white;
+}
+
+@media(max-width: 1024px) {
+  .degree-section {
+    text-align: center;
+  }
+  .col-lg-4.col-lg-push-1 {
+    margin-bottom: 20px;
+  }
 }
 
 .contact-section {
